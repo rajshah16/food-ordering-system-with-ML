@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breakfast</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Great+Vibes&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="{% static 'menu/css/open-iconic-bootstrap.min.css'%}">
+    <link rel="stylesheet" href="{% static 'menu/css/animate.css'%}">
+
+    <link rel="stylesheet" href="{% static 'menu/css/owl.carousel.min.css'%}">
+    <link rel="stylesheet" href="{% static 'menu/css/owl.theme.default.min.css'%}">
+    <link rel="stylesheet" href="{% static 'menu/css/magnific-popup.css'%}">
+
+    <link rel="stylesheet" href="{% static 'menu/css/aos.css'%}">
+
+    <link rel="stylesheet" href="{% static 'menu/css/ionicons.min.css'%}">
+
+    <link rel="stylesheet" href="{% static 'menu/css/bootstrap-datepicker.css'%}">
+    <link rel="stylesheet" href="{% static 'menu/css/jquery.timepicker.css'%}">
+
+
+    <link rel="stylesheet" href="{% static 'menu/css/flaticon.css'%}">
+    <link rel="stylesheet" href="{% static 'menu/css/icomoon.css'%}">
+	<link rel="stylesheet" href="{% static 'menu/css/style.css'%}">
+	<link rel="stylesheet" href="{% static 'menu/css/navbar.css'%}">
+	<script type="text/javascript">
+		var user = '{{request.user}}'
+		function getToken(name) {
+			let cookieValue = null;
+			if (document.cookie && document.cookie !== '') {
+				const cookies = document.cookie.split(';');
+				for (let i = 0; i < cookies.length; i++) {
+					const cookie = cookies[i].trim();
+					// Does this cookie string begin with the name we want?
+					if (cookie.substring(0, name.length + 1) === (name + '=')) {
+						cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+						break;
+					}
+				}
+			}
+			return cookieValue;
+		}
+		const csrftoken = getToken('csrftoken');
+	</script>
+</head>
+<body>
+    <section class="navigationbar">
+		<div class="nav-containerbar">
+		  <div class="brandbar">
+			<a href="#!">Automated Canteen System</a>
+		  </div>
+		  <nav>
+			<div class="nav-mobilebar"><a id="nav-togglebar" href="#!"><span></span></a></div>
+			<ul class="nav-listbar">
+			  <li>
+				<a href="../../">Home</a>
+			  </li>
+			  <li>
+				<a href="../../about">About</a>
+			  </li>
+			  <li>
+				<a href="#!">Menu</a>
+				<ul class="nav-dropdownbar">
+				  <li>
+					<a href="#!">Breakfast</a>
+				  </li>
+				  <li>
+					<a href="beverages">Beverages</a>
+				  </li>
+				  <li>
+					<a href="chapatis">Chapatis</a>
+				  </li>
+				  <li>
+					<a href="soup">Soups</a>
+				  </li>
+				  <li>
+					<a href="../menu">Main Course</a>
+				  </li>
+				  <li>
+					<a href="dessert">Dessert</a>
+				  </li>
+				</ul>
+			  </li>
+			  <li>
+				<a href="cart">My Orders</a>
+			  </li>
+			  <li>
+				<a href="#!">Contact</a>
+			  </li>
+			</ul>
+		  </nav>
+		</div>
+	  </section>
+	  
+    <!-- END nav -->
+    
+    <section class="hero-wrap hero-wrap-2" style="background-image: url('../../static/menu/img-bf/bg_3.jpg');" data-stellar-background-ratio="0.25">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row no-gutters slider-text align-items-end justify-content-center">
+          <div class="col-md-9 ftco-animate text-center mb-4">
+            <h3 class="mb-2 bread">Breakfast & Snacks</h3>
+           
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+		<section class="ftco-section">
+    	<div class="container">
+        <div class="ftco-search">
+					<div class="row">
+            <div class="col-md-12 nav-link-wrap">
+	            <div class="nav nav-pills d-flex text-center" id="v-pills-tab" role="tablist" aria-orientation="horizontal">
+	              <a class="nav-link ftco-animate active" id="v-pills-1-tab" data-toggle="pill" href="#v-pills-1" role="tab" aria-controls="v-pills-1" aria-selected="true">South indian</a>
+
+	              <a class="nav-link ftco-animate" id="v-pills-2-tab" data-toggle="pill" href="#v-pills-2" role="tab" aria-controls="v-pills-2" aria-selected="false">Appetizers</a>
+
+	              <a class="nav-link ftco-animate" id="v-pills-3-tab" data-toggle="pill" href="#v-pills-3" role="tab" aria-controls="v-pills-3" aria-selected="false">Sandwiches</a>
+
+	             
+
+	             
+	            </div>
+	          </div>
+	          <div class="col-md-12 tab-wrap">
+	            
+	            <div class="tab-content" id="v-pills-tabContent">
+
+	              <div class="tab-pane fade show active" id="v-pills-1" role="tabpanel" aria-labelledby="day-1-tab">
+	              	<div class="row no-gutters d-flex align-items-stretch">
+					        	
+					        	
+
+					        	
+								
+								{% for i in menu%}
+									{% if i.subcategory == 'southindian'%}
+
+									<div class="col-md-12 col-lg-6 d-flex align-self-stretch">
+										<div class="menus d-sm-flex ftco-animate align-items-stretch">
+											<div class="menu-img img"><img src="../../../media/{{i.image}}" alt=""
+													srcset=""></div>
+											<div class="text d-flex align-items-center">
+												<div>
+													<div class="d-flex">
+														<div class="one-half">
+															<h3>{{i.food_name}}</h3>
+														</div>
+														<br>
+														<div class="one-forth">
+															<span class="price">Rs{{i.price}}</span>
+														</div>
+													</div>
+
+													<p><a href="#" data-product={{i.id}} data-action="add"
+															class="btn btn-primary update-cart">Order now</a></p>
+												</div>
+											</div>
+										</div>
+									</div>
+									{% endif %}
+									{% endfor %}
+
+
+
+					        	
+				  </div>
+				  </div>
+	            
+
+	              <div class="tab-pane fade" id="v-pills-2" role="tabpanel" aria-labelledby="v-pills-day-2-tab">
+	              	<div class="row no-gutters d-flex align-items-stretch">
+					        	
+					        	
+
+					        	
+								
+								{% for i in menu%}
+									{% if i.subcategory == 'appetizers'%}
+
+									<div class="col-md-12 col-lg-6 d-flex align-self-stretch">
+										<div class="menus d-sm-flex ftco-animate align-items-stretch">
+											<div class="menu-img img"><img src="../../../media/{{i.image}}" alt=""
+													srcset=""></div>
+											<div class="text d-flex align-items-center">
+												<div>
+													<div class="d-flex">
+														<div class="one-half">
+															<h3>{{i.food_name}}</h3>
+														</div>
+														<br>
+														<div class="one-forth">
+															<span class="price">Rs{{i.price}}</span>
+														</div>
+													</div>
+
+													<p><a href="#" data-product={{i.id}} data-action="add"
+															class="btn btn-primary update-cart">Order now</a></p>
+												</div>
+											</div>
+										</div>
+									</div>
+									{% endif %}
+									{% endfor %}
+					        	
+
+					        	
+					        	
+
+					        	
+					        	
+					        </div>
+	              </div>
+
+	              <div class="tab-pane fade" id="v-pills-3" role="tabpanel" aria-labelledby="v-pills-day-3-tab">
+	              	<div class="row no-gutters d-flex align-items-stretch">
+					        	
+					        	
+								
+								{% for i in menu%}
+									{% if i.subcategory == 'sandwiches'%}
+
+									<div class="col-md-12 col-lg-6 d-flex align-self-stretch">
+										<div class="menus d-sm-flex ftco-animate align-items-stretch">
+											<div class="menu-img img"><img src="../../../media/{{i.image}}" alt=""
+													srcset=""></div>
+											<div class="text d-flex align-items-center">
+												<div>
+													<div class="d-flex">
+														<div class="one-half">
+															<h3>{{i.food_name}}</h3>
+														</div>
+														<br>
+														<div class="one-forth">
+															<span class="price">Rs{{i.price}}</span>
+														</div>
+													</div>
+
+													<p><a href="#" data-product={{i.id}} data-action="add"
+															class="btn btn-primary update-cart">Order now</a></p>
+												</div>
+											</div>
+										</div>
+									</div>
+									{% endif %}
+									{% endfor %}
+
+					        
+					            </div> 
+					        	</div> 
+					       
+
+
+	              
+					        	
+					        	
+					        	
+
+
+					        	
+					        
+	              </div>
+	            </div>
+	          </div>
+	        </div>
+        </div>
+    	</div>
+    </section>
+    <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+  <script src="{%static 'menu/js/cartbf.js'%}"></script>	
+  <script src="{%static 'menu/js/jquery.min.js'%}"></script>
+  <script src="{%static 'menu/js/jquery-migrate-3.0.1.min.js'%}"></script>
+  <script src="{%static 'menu/js/popper.min.js'%}"></script>
+  <script src="{%static 'menu/js/bootstrap.min.js'%}"></script>
+  <script src="{%static 'menu/js/jquery.easing.1.3.js'%}"></script>
+  <script src="{%static 'menu/js/jquery.waypoints.min.js'%}"></script>
+  <script src="{%static 'menu/js/jquery.stellar.min.js'%}"></script>
+  <script src="{%static 'menu/js/owl.carousel.min.js'%}"></script>
+  <script src="{%static 'menu/js/jquery.magnific-popup.min.js'%}"></script>
+  <script src="{%static 'menu/js/aos.js'%}"></script>
+  <script src="{%static 'menu/js/jquery.animateNumber.min.js'%}"></script>
+  <script src="{%static 'menu/js/bootstrap-datepicker.js'%}"></script>
+  <script src="{%static 'menu/js/jquery.timepicker.min.js'%}"></script>
+  <script src="{%static 'menu/js/scrollax.min.js'%}"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+  <script src="menu/js/google-map.js"></script>
+  <script src="{%static 'menu/js/main.js'%}"></script>
+  <script src="{%static 'menu/js/navbar.js'%}"></script>
+
+</body>
+</html>

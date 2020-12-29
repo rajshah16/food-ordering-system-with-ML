@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Main Course</title>
+     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Great+Vibes&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="{% static 'menu/css/open-iconic-bootstrap.min.css'%}">
+    <link rel="stylesheet" href="{% static 'menu/css/animate.css'%}">
+
+    <link rel="stylesheet" href="{% static 'menu/css/owl.carousel.min.css'%}">
+    <link rel="stylesheet" href="{% static 'menu/css/owl.theme.default.min.css'%}">
+    <link rel="stylesheet" href="{% static 'menu/css/magnific-popup.css'%}">
+
+    <link rel="stylesheet" href="{% static 'menu/css/aos.css'%}">
+
+    <link rel="stylesheet" href="{% static 'menu/css/ionicons.min.css'%}">
+
+    <link rel="stylesheet" href="{% static 'menu/css/bootstrap-datepicker.css'%}">
+    <link rel="stylesheet" href="{% static 'menu/css/jquery.timepicker.css'%}">
+
+
+    <link rel="stylesheet" href="{% static 'menu/css/flaticon.css'%}">
+    <link rel="stylesheet" href="{% static 'menu/css/icomoon.css'%}">
+	<link rel="stylesheet" href="{% static 'menu/css/style.css'%}">
+	<link rel="stylesheet" href="{% static 'menu/css/navbar.css'%}">
+</head>
+<body>
+    <section class="navigationbar">
+		<div class="nav-containerbar">
+		  <div class="brandbar">
+			<a href="#!">Automated Canteen System</a>
+		  </div>
+		  <nav>
+			<div class="nav-mobilebar"><a id="nav-togglebar" href="#!"><span></span></a></div>
+			<ul class="nav-listbar">
+			  <li>
+				<a href="../index.html">Home</a>
+			  </li>
+			  <li>
+				<a href="#!">About</a>
+			  </li>
+			  <li>
+				<a href="#!">Menu</a>
+				<ul class="nav-dropdownbar">
+				  <li>
+					<a href="../menu-bf/menu.html">Breakfast</a>
+				  </li>
+				  <li>
+					<a href="../menu(beverages)/beverages.html">Beverages</a>
+				  </li>
+				  <li>
+					<a href="../menu(chapatis)/chapatis.html">Chapatis</a>
+				  </li>
+				  <li>
+					<a href="../menu(Soup)/soup.html">Soups</a>
+				  </li>
+				  <li>
+					<a href="#">Main Course</a>
+				  </li>
+				  <li>
+					<a href="../menu-de/menu.html">Dessert</a>
+				  </li>
+				</ul>
+			  </li>
+			  <li>
+				<a href="#!">My Orders</a>
+			  </li>
+			  <li>
+				<a href="#!">Contact</a>
+			  </li>
+			</ul>
+		  </nav>
+		</div>
+	  </section>
+
+    <!-- END nav -->
+
+    <section class="hero-wrap hero-wrap-2" style="background-image: url('../../static/menu/images/bg_3.jpg');" data-stellar-background-ratio="0.25">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row no-gutters slider-text align-items-end justify-content-center">
+          <div class="col-md-9 ftco-animate text-center mb-4">
+            <h3 class="mb-2 bread">Main Course</h3>
+            <!-- <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home <i class="ion-ios-arrow-forward"></i></a></span> <span>Menu <i class="ion-ios-arrow-forward"></i></span></p> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+		<section class="ftco-section">
+    	<div class="container">
+        <div class="ftco-search">
+					<div class="row">
+            <div class="col-md-12 nav-link-wrap">
+	            <div class="nav nav-pills d-flex text-center" id="v-pills-tab" role="tablist" aria-orientation="horizontal">
+	              <a class="nav-link ftco-animate active" id="v-pills-1-tab" data-toggle="pill" href="#v-pills-1" role="tab" aria-controls="v-pills-1" aria-selected="true">Sabzi</a>
+
+	              <a class="nav-link ftco-animate" id="v-pills-2-tab" data-toggle="pill" href="#v-pills-2" role="tab" aria-controls="v-pills-2" aria-selected="false">Fast Food</a>
+
+
+	              <!-- <a class="nav-link ftco-animate" id="v-pills-4-tab" data-toggle="pill" href="#v-pills-4" role="tab" aria-controls="v-pills-4" aria-selected="false">Drinks</a> -->
+
+	              <a class="nav-link ftco-animate" id="v-pills-5-tab" data-toggle="pill" href="#v-pills-5" role="tab" aria-controls="v-pills-5" aria-selected="false">Rice</a>
+
+
+	            </div>
+	          </div>
+	          <div class="col-md-12 tab-wrap">
+
+	            <div class="tab-content" id="v-pills-tabContent">
+
+	              <div class="tab-pane fade show active" id="v-pills-1" role="tabpanel" aria-labelledby="day-1-tab">
+	              	<div class="row no-gutters d-flex align-items-stretch">
+					        	<div class="col-md-12 col-lg-6 d-flex align-self-stretch">
+					        		<div class="menus d-sm-flex ftco-animate align-items-stretch">
+					              <div class="menu-img img" style="background-image: url(../../static/menu/images/idli.jpg);"></div>
+					              <div class="text d-flex align-items-center">
+													<div>
+						              	<div class="d-flex">
+							                <div class="one-half">
+							                  <h3>Veg Lazeez</h3>
+											</div>
+											<br>
+							                <div class="one-forth">
+							                  <span class="price">Rs 60</span>
+							                </div>
+							              </div>
+							              <!-- <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p> -->
+							              <p><a href="#" class="btn btn-primary">Order now</a></p>
+						              </div>
+					              </div>
+					            </div>
+					        	</div>
+					        	<div class="col-md-12 col-lg-6 d-flex align-self-stretch">
+					        		<div class="menus d-sm-flex ftco-animate align-items-stretch">
+					              <div class="menu-img img" style="background-image: url(../../static/menu/images/dosa.jpg);"></div>
+					              <div class="text d-flex align-items-center">
+													<div>
+						              	<div class="d-flex">
+							                <div class="one-half">
+							                  <h3>Veg Makhani</h3>
+											</div>
+											<br>
+							                <div class="one-forth">
+							                  <span class="price">Rs 100</span>
+							                </div>
+							              </div>
+
+										<p><a href="#" class="btn btn-primary">Order now</a></p>
+						              </div>
+					              </div>
+					            </div>
+					        	</div>
+
+					        	<div class="col-md-12 col-lg-6 d-flex align-self-stretch">
+					        		<div class="menus d-sm-flex ftco-animate align-items-stretch">
+					              <div class="menu-img img order-md-last" style="background-image: url(../../static/menu/images/medu_vada.jpg);"></div>
+					              <div class="text d-flex align-items-center">
+													<div>
+						              	<div class="d-flex">
+							                <div class="one-half">
+											  <h3>Paneer Amritsari</h3>
+											  <br>
+							                </div>
+							                <div class="one-forth">
+							                  <span class="price">Rs 60</span>
+							                </div>
+							              </div>
+
+							              <p><a href="#" class="btn btn-primary">Order now</a></p>
+						              </div>
+					              </div>
+					            </div>
+					        	</div>
+					        	<div class="col-md-12 col-lg-6 d-flex align-self-stretch">
+					        		<div class="menus d-sm-flex ftco-animate align-items-stretch">
+					              <div class="menu-img img order-md-last" style="background-image: url(../../static/menu/images/uthapa.jpg);"></div>
+					              <div class="text d-flex align-items-center">
+													<div>
+						              	<div class="d-flex">
+							                <div class="one-half">
+							                  <h3>Babycorn Mushroom Masala</h3>
+											</div>
+											<br>
+							                <div class="one-forth">
+							                  <span class="price">Rs 120</span>
+							                </div>
+							              </div>
+
+							              <p><a href="#" class="btn btn-primary">Order now</a></p>
+						              </div>
+					              </div>
+					            </div>
+					        	</div>
+
+					        	<div class="col-md-12 col-lg-6 d-flex align-self-stretch">
+					        		<div class="menus d-sm-flex ftco-animate align-items-stretch">
+					              <div class="menu-img img" style="background-image: url(../../static/menu/images/masala_dosa.jpg);"></div>
+					              <div class="text d-flex align-items-center">
+													<div>
+						              	<div class="d-flex">
+							                <div class="one-half">
+							                  <h3>Veg Kolhapuri</h3>
+											</div>
+											<br>
+							                <div class="one-forth">
+							                  <span class="price">Rs 150</span>
+							                </div>
+							              </div>
+
+							        	 <p><a href="#" class="btn btn-primary">Order now</a></p>
+						              </div>
+					              </div>
+					            </div>
+					        	</div>
+
+				  </div>
+				  </div>
+
+
+	              <div class="tab-pane fade" id="v-pills-2" role="tabpanel" aria-labelledby="v-pills-day-2-tab">
+	              	<div class="row no-gutters d-flex align-items-stretch">
+					        	<div class="col-md-12 col-lg-6 d-flex align-self-stretch">
+					        		<div class="menus d-sm-flex ftco-animate align-items-stretch">
+					              <div class="menu-img img" style="background-image: url(../../static/menu/images/pav_bhaji.jpg);"></div>
+					              <div class="text d-flex align-items-center">
+													<div>
+						              	<div class="d-flex">
+							                <div class="one-half">
+							                  <h3>Pav bhaji</h3>
+							                </div>
+							                <div class="one-forth">
+							                  <span class="price">Rs 150</span>
+							                </div>
+							              </div>
+
+							              <p><a href="#" class="btn btn-primary">Order now</a></p>
+						              </div>
+					              </div>
+					            </div>
+					        	</div>
+					        	<div class="col-md-12 col-lg-6 d-flex align-self-stretch">
+					        		<div class="menus d-sm-flex ftco-animate align-items-stretch">
+					              <div class="menu-img img" style="background-image: url(../../static/menu/images/pizza.jpg);"></div>
+					              <div class="text d-flex align-items-center">
+													<div>
+						              	<div class="d-flex">
+							                <div class="one-half">
+							                  <h3>Pizza</h3>
+							                </div>
+							                <div class="one-forth">
+							                  <span class="price">Rs 200</span>
+							                </div>
+							              </div>
+
+							              <p><a href="#" class="btn btn-primary">Order now</a></p>
+						              </div>
+					              </div>
+					            </div>
+					        	</div>
+
+					        	<div class="col-md-12 col-lg-6 d-flex align-self-stretch">
+					        		<div class="menus d-sm-flex ftco-animate align-items-stretch">
+					              <div class="menu-img img order-md-last" style="background-image: url(../../static/menu/images/pasta.jpg);"></div>
+					              <div class="text d-flex align-items-center">
+													<div>
+						              	<div class="d-flex">
+							                <div class="one-half">
+							                  <h3>Pasta</h3>
+							                </div>
+							                <div class="one-forth">
+							                  <span class="price">Rs 200</span>
+							                </div>
+							              </div>
+
+							              <p><a href="#" class="btn btn-primary">Order now</a></p>
+						              </div>
+					              </div>
+					            </div>
+					        	</div>
+
+
+
+
+
+
+
+					        </div>
+	              </div>
+
+	              <div class="tab-pane fade" id="v-pills-3" role="tabpanel" aria-labelledby="v-pills-day-3-tab">
+	              	<div class="row no-gutters d-flex align-items-stretch">
+					        	<div class="col-md-12 col-lg-6 d-flex align-self-stretch">
+					        		<div class="menus d-sm-flex ftco-animate align-items-stretch">
+					              <div class="menu-img img" style="background-image: url(../../static/menu/images/panner_butter.jpg);"></div>
+					              <div class="text d-flex align-items-center">
+													<div>
+						              	<div class="d-flex">
+							                <div class="one-half">
+							                  <h3>Paneer butter masala</h3>
+							                </div>
+							                <div class="one-forth">
+							                  <span class="price">$29</span>
+							                </div>
+							              </div>
+							              <!-- <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p> -->
+							              <p><a href="#" class="btn btn-primary">Order now</a></p>
+						              </div>
+					              </div>
+					            </div>
+					        	</div>
+					        	<div class="col-md-12 col-lg-6 d-flex align-self-stretch">
+					        		<div class="menus d-sm-flex ftco-animate align-items-stretch">
+					              <div class="menu-img img" style="background-image: url(../../static/menu/images/kolhapuri.jpg);"></div>
+					              <div class="text d-flex align-items-center">
+													<div>
+						              	<div class="d-flex">
+							                <div class="one-half">
+							                  <h3>Veg Kolhapuri</h3>
+							                </div>
+							                <div class="one-forth">
+							                  <span class="price">$29</span>
+							                </div>
+							              </div>
+							              <!-- <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p> -->
+							              <p><a href="#" class="btn btn-primary">Order now</a></p>
+						              </div>
+					              </div>
+					            </div>
+					        	</div>
+
+
+					            </div>
+					        	</div>
+					        <!-- </div> -->
+	              <!-- </div> -->
+
+	              <div class="tab-pane fade" id="v-pills-5" role="tabpanel" aria-labelledby="v-pills-day-5-tab">
+	              	<div class="row no-gutters d-flex align-items-stretch">
+					        	<div class="col-md-12 col-lg-6 d-flex align-self-stretch">
+					        		<div class="menus d-sm-flex ftco-animate align-items-stretch">
+					              <div class="menu-img img" style="background-image: url(../../static/menu/images/ice_cream.jpg);"></div>
+					              <div class="text d-flex align-items-center">
+													<div>
+						              	<div class="d-flex">
+							                <div class="one-half">
+							                  <h3>Jeera Rice with Dal Fry</h3>
+							                </div>
+							                <div class="one-forth">
+							                  <span class="price">Rs 50</span>
+							                </div>
+							              </div>
+							              <!-- <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p> -->
+							              <p><a href="#" class="btn btn-primary">Order now</a></p>
+						              </div>
+					              </div>
+					            </div>
+					        	</div>
+					        	<div class="col-md-12 col-lg-6 d-flex align-self-stretch">
+					        		<div class="menus d-sm-flex ftco-animate align-items-stretch">
+					              <div class="menu-img img" style="background-image: url(../../static/menu/images/dessert-2.jpg);"></div>
+					              <div class="text d-flex align-items-center">
+													<div>
+						              	<div class="d-flex">
+							                <div class="one-half">
+							                  <h3>Veg Pulav</h3>
+							                </div>
+							                <div class="one-forth">
+							                  <span class="price">Rs 100</span>
+							                </div>
+							              </div>
+							           
+							              <p><a href="#" class="btn btn-primary">Order now</a></p>
+						              </div>
+					              </div>
+					            </div>
+					        	</div>
+
+					        	<div class="col-md-12 col-lg-6 d-flex align-self-stretch">
+					        		<div class="menus d-sm-flex ftco-animate align-items-stretch">
+					              <div class="menu-img img order-md-last" style="background-image: url(../../static/menu/images/dessert-5.jpg);"></div>
+					              <div class="text d-flex align-items-center">
+													<div>
+						              	<div class="d-flex">
+							                <div class="one-half">
+							                  <h3>Biryani</h3>
+							                </div>
+							                <div class="one-forth">
+							                  <span class="price">Rs 150</span>
+							                </div>
+							              </div>
+
+							              <p><a href="#" class="btn btn-primary">Order now</a></p>
+						              </div>
+					              </div>
+					            </div>
+					        	</div>
+					        	<!-- <div class="col-md-12 col-lg-6 d-flex align-self-stretch">
+					        		<div class="menus d-sm-flex ftco-animate align-items-stretch">
+					              <div class="menu-img img order-md-last" style="background-image: url(images/dessert-4.jpg);"></div>
+					              <div class="text d-flex align-items-center">
+													<div>
+						              	<div class="d-flex">
+							                <div class="one-half">
+							                  <h3>Grilled Beef with potatoes</h3>
+							                </div>
+							                <div class="one-forth">
+							                  <span class="price">$29</span>
+							                </div>
+							              </div>
+							              <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
+							              <p><a href="#" class="btn btn-primary">Order now</a></p>
+						              </div>
+					              </div>
+					            </div>
+					        	</div> -->
+
+					        	<!-- <div class="col-md-12 col-lg-6 d-flex align-self-stretch">
+					        		<div class="menus d-sm-flex ftco-animate align-items-stretch">
+					              <div class="menu-img img" style="background-image: url(images/dessert-5.jpg);"></div>
+					              <div class="text d-flex align-items-center">
+													<div>
+						              	<div class="d-flex">
+							                <div class="one-half">
+							                  <h3>Grilled Beef with potatoes</h3>
+							                </div>
+							                <div class="one-forth">
+							                  <span class="price">$29</span>
+							                </div>
+							              </div>
+							              <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
+							              <p><a href="#" class="btn btn-primary">Order now</a></p>
+						              </div>
+					              </div>
+					            </div>
+					        	</div> -->
+					        	<!-- <div class="col-md-12 col-lg-6 d-flex align-self-stretch">
+					        		<div class="menus d-sm-flex ftco-animate align-items-stretch">
+					              <div class="menu-img img" style="background-image: url(images/drink-6.jpg);"></div>
+					              <div class="text d-flex align-items-center">
+													<div>
+						              	<div class="d-flex">
+							                <div class="one-half">
+							                  <h3>Grilled Beef with potatoes</h3>
+							                </div>
+							                <div class="one-forth">
+							                  <span class="price">$29</span>
+							                </div>
+							              </div>
+							              <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
+							              <p><a href="#" class="btn btn-primary">Order now</a></p>
+						              </div>
+					              </div>
+					            </div>
+					        	</div> -->
+					        </div>
+	              </div>
+
+
+
+
+
+
+
+
+
+	              </div>
+	            </div>
+	          </div>
+	        </div>
+        </div>
+    	</div>
+    </section>
+
+
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="{%static 'menu/js/jquery.min.js'%}"></script>
+  <script src="{%static 'menu/js/jquery-migrate-3.0.1.min.js'%}"></script>
+  <script src="{%static 'menu/js/popper.min.js'%}"></script>
+  <script src="{%static 'menu/js/bootstrap.min.js'%}"></script>
+  <script src="{%static 'menu/js/jquery.easing.1.3.js'%}"></script>
+  <script src="{%static 'menu/js/jquery.waypoints.min.js'%}"></script>
+  <script src="{%static 'menu/js/jquery.stellar.min.js'%}"></script>
+  <script src="{%static 'menu/js/owl.carousel.min.js'%}"></script>
+  <script src="{%static 'menu/js/jquery.magnific-popup.min.js'%}"></script>
+  <script src="{%static 'menu/js/aos.js'%}"></script>
+  <script src="{%static 'menu/js/jquery.animateNumber.min.js'%}"></script>
+  <script src="{%static 'menu/js/bootstrap-datepicker.js'%}"></script>
+  <script src="{%static 'menu/js/jquery.timepicker.min.js'%}"></script>
+  <script src="{%static 'menu/js/scrollax.min.js'%}"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+  <script src="menu/js/google-map.js"></script>
+  <script src="{%static 'menu/js/main.js'%}"></script>
+  <script src="{%static 'menu/js/navbar.js'%}"></script>
+
+</body>
+</html>
