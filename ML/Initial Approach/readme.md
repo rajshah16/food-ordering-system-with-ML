@@ -1,0 +1,1 @@
+Used cosine similarity
