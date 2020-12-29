@@ -1,0 +1,161 @@
+<!doctype html>
+{% load static %}
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About us</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="{% static 'css/about us.css'%}"/>
+<link rel="stylesheet" href="{% static 'css/navbarcopy.css'%}"/>
+<!--using FontAwesome------------------->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+<script src="{% static 'js/navbar.js'%}"></script>
+<script src="{% static 'js/impscript.js'%}"></script>
+</head>
+<body>
+  <section class="navigationbar">
+		<div class="nav-containerbar">
+			<div class="brandbar">
+				<a href="#!">Automated Canteen System</a>
+			</div>
+			<nav>
+				<div class="nav-mobilebar"><a id="nav-togglebar" href="#!"><span></span></a></div>
+				<ul class="nav-listbar">
+					<li>
+
+						<a href="..">Home</a>
+					</li>
+					<li>
+						<a href="#!">About</a>
+					</li>
+					<li>
+						<a href="#!">Menu</a>
+						<ul class="nav-dropdownbar">
+							<li>
+								<a href="../menu/breakfast">Breakfast and Snacks</a>
+							</li>
+							<li>
+								<a href="../menu/beverages">Beverages</a>
+							</li>
+							<li>
+								<a href="../menu/chapatis">Chapatis</a>
+							</li>
+							<li>
+								<a href="../menu/soup">Soups</a>
+							</li>
+							<li>
+								<a href="../menu">Main Course</a>
+							</li>
+							<li>
+								<a href="../menu/dessert">Dessert</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="#!">My Orders</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+    </section>
+    <section>
+        <div class="col-md-12" id="sec1">
+            <div class="cdbb" id="topup">
+              <br />
+              <h2 id="cod">About Us</h2>
+              <p>We are a group of 3 students and we created this Web Apllication as our Sem-3 project.</p>
+              <p>The idea behind the automated canteen system is to simply the ordering process for both the customer 
+                 and the canteen staff. <p>It provides an e-menu through which the customers can order without waiting in long queues.
+                 In addition to that we are providng recommendation thorugh our content filtering algorithm for the best user experience
+                 with a visual confirmation that the order has been placed.</p>
+              </p>
+            </div>
+        </div>
+    </section>
+    <section id="team">
+        <h1 class="heading">
+            Our Team 
+        </h1>
+    <!--container---------------->
+    <div class="container">
+        <!--box-1----------->
+        <div class="box">
+            <!--top-bar---------------->
+            <div class="top-bar"></div>
+            <!--nav------------->
+            <!--img and details---------------->
+            <div class="details">
+                <img src="{% static 'images/raj.jpg'%}" alt="">
+                <strong>Raj Shah</strong>
+                <p>rajshah.rutu@gmail.com</p>
+                <P>
+                    <ul>
+                        <li>Django</li>
+                        <li>ReactJS</li>
+                        <li>Machine Learning</li>
+                    </ul>
+                </P>
+            </div>
+            <!--view-btns------------------->
+            <div class="btn">
+                <a href="https://www.linkedin.com/in/raj-shah-b13b321b4/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.instagram.com/__rajshah16/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://github.com/rajshah16?tab=repositories" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+        <!--box-2----------->
+        <div class="box">
+            <!--top-bar---------------->
+            <div class="top-bar"></div>
+            <!--nav------------->
+            <!--img and details---------------->
+            <div class="details">
+                <img src="{% static 'images/ranveer.jpeg'%}" alt="">
+                <strong>Ranveer Shah</strong>
+                <p>ranveer2001s@gmail.com</p>
+                <p>
+                <ul>
+                    <li>JavaScript</li>
+                    <li>Data Science</li>
+                    <li>Flutter</li>
+                </ul>
+            </p>
+            </div>
+            <!--view-btns------------------->
+            <div class="btn">
+                <a href="https://www.linkedin.com/in/ranveer-shah-6246351b4/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.instagram.com/ranveer_s3/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://github.com/Radon333" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+        <!--box-3----------->
+        <div class="box">
+            <!--top-bar---------------->
+            <div class="top-bar"></div>
+            <!--nav------------->
+            <!--img and details---------------->
+            <div class="details">
+                <img src="{% static 'images/dhruti.jpg'%}" alt="">
+                <strong>Dhruti Seksaria</strong>
+                <p>29dhruti@gmail.com</p>
+                <p>
+                <ul>
+                    <li>UI/UX Design</li>
+                    <li>Artificial Intelligence</li>
+                    <li>Graphic Designing</li>
+                </ul>
+                </p>
+            </div>
+            <!--view-btns------------------->
+            <div class="btn">
+                <a href="https://www.linkedin.com/in/dhruti-seksaria-3111591aa" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.instagram.com/invites/contact/?i=1630up3l2pqke&utm_content=2l7hqdx" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome(Django)</title>
+    <link rel="stylesheet"  href="{% static 'css/style.css' %}" />
+    <link rel="stylesheet"  href="{% static 'css/lightslider.css' %}" />
+    <link rel="stylesheet"  href="{% static 'css/navbarcopy.css' %}" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="{% static 'js/JQuery3.3.1.js'%}"></script>
+	<script src="{% static 'js/lightslider.js'%}"></script>
+	<script src = "{% static 'js/navbar.js'%}"></script>
+	<script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+    <style>
+		body {font-family: Arial, Helvetica, sans-serif;}
+
+		/* Full-width input fields */
+		input[type=text], input[type=password] {
+		  width: 100%;
+		  padding: 12px 20px;
+		  margin: 8px 0;
+		  display: inline-block;
+		  border: 1px solid #ccc;
+		  box-sizing: border-box;
+		}
+
+		/* Set a style for all buttons */
+		button {
+		  background-color: #4CAF50;
+		  color: white;
+		  padding: 14px 20px;
+		  margin: 8px 0;
+		  border: none;
+		  cursor: pointer;
+		  width: 100%;
+		}
+
+		button:hover {
+		  opacity: 0.8;
+		}
+
+		/* Extra styles for the cancel button */
+		.cancelbtn {
+		  width: auto;
+		  padding: 10px 18px;
+		  background-color: #f44336;
+		}
+
+		/* Center the image and position the close button */
+		.imgcontainer {
+		  text-align: center;
+		  margin: 24px 0 12px 0;
+		  position: relative;
+		}
+
+		img.avatar {
+		  width: 40%;
+		  border-radius: 50%;
+		}
+
+		.container {
+		  padding: 16px;
+		}
+
+		span.psw {
+		  float: right;
+		  padding-top: 16px;
+		}
+
+		/* The Modal (background) */
+		.modal {
+		  display: none; /* Hidden by default */
+		  position: fixed; /* Stay in place */
+		  z-index: 1; /* Sit on top */
+		  left: 0;
+		  top: 0;
+		  width: 100%; /* Full width */
+		  height: 100%; /* Full height */
+		  overflow: auto; /* Enable scroll if needed */
+		  background-color: rgb(0,0,0); /* Fallback color */
+		  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+		  padding-top: 60px;
+		}
+
+		/* Modal Content/Box */
+		.modal-content {
+		  background-color: #fefefe;
+		  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+		  border: 1px solid #888;
+		  width: 80%; /* Could be more or less, depending on screen size */
+		}
+
+		/* The Close Button (x) */
+		.close {
+		  position: absolute;
+		  right: 25px;
+		  top: 0;
+		  color: #000;
+		  font-size: 35px;
+		  font-weight: bold;
+		}
+
+		.close:hover,
+		.close:focus {
+		  color: red;
+		  cursor: pointer;
+		}
+
+		/* Add Zoom Animation */
+		.animate {
+		  -webkit-animation: animatezoom 0.6s;
+		  animation: animatezoom 0.6s
+		}
+
+		@-webkit-keyframes animatezoom {
+		  from {-webkit-transform: scale(0)}
+		  to {-webkit-transform: scale(1)}
+		}
+
+		@keyframes animatezoom {
+		  from {transform: scale(0)}
+		  to {transform: scale(1)}
+		}
+
+		/* Change styles for span and cancel button on extra small screens */
+		@media screen and (max-width: 300px) {
+		  span.psw {
+			 display: block;
+			 float: none;
+		  }
+		  .cancelbtn {
+			 width: 100%;
+		  }
+		}
+	</style>
+</head>
+<body>
+    <section class="navigationbar">
+		<div class="nav-containerbar">
+			<div class="brandbar">
+				<a href="#!">Automated Canteen System</a>
+			</div>
+			<nav>
+				<div class="nav-mobilebar"><a id="nav-togglebar" href="#!"><span></span></a></div>
+				<ul class="nav-listbar">
+					<li>
+
+						<a href="index.html">Home</a>
+					</li>
+					<li>
+						<a href="about">About</a>
+					</li>
+					<li>
+						<a href="#!">Menu</a>
+						<ul class="nav-dropdownbar">
+							<li>
+								<a href="../menu/breakfast">Breakfast and Snacks</a>
+							</li>
+							<li>
+								<a href="../menu/beverages">Beverages</a>
+							</li>
+							<li>
+								<a href="../menu/chapatis">Chapatis</a>
+							</li>
+							<li>
+								<a href="../menu/soup">Soups</a>
+							</li>
+							<li>
+								<a href="../menu">Main Course</a>
+							</li>
+							<li>
+								<a href="../menu/dessert">Dessert</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="../menu/cart">My Orders</a>
+					</li>
+					<li>
+						<a href="#!">Contact</a>
+					</li>
+					<li>
+						
+						<span><a href="login">Login</a></span>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</section>
+	<!-- Login -->
+	<div id="id01" class="modal">
+
+		<form class="modal-content animate" action="/action_page.php" method="post">
+		  <div class="imgcontainer">
+			<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+			<img src="img/avatar_img.jpg" alt="Avatar" class="avatar">
+		  </div>
+
+		  <div class="container">
+			<label for="uname"><b>Username</b></label>
+			<input type="text" placeholder="Enter Username" name="uname" required>
+
+			<label for="psw"><b>Password</b></label>
+			<input type="password" placeholder="Enter Password" name="psw" required>
+
+			<button type="submit">Login</button>
+			<label>
+			  <input type="checkbox" checked="checked" name="remember"> Remember me
+			</label>
+		  </div>
+
+		  <div class="container" style="background-color:#f1f1f1">
+			<button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+			<span class="psw">Forgot <a href="#">password?</a></span>
+		  </div>
+		</form>
+	  </div>
+
+
+	<!-- Login End -->
+	<section class="main">
+		<!--slider------------->
+		<ul id="autoWidth" class="cs-hidden">
+			<!--1------------------------------>
+			<a href="../menu/breakfast">
+			<li class="item-a">
+				<div class="box box-img01">
+					<div class="slide-details">
+						<p>Breakfast & Snacks</p>
+					</div>
+					<div class="user user-img01"></div>
+				</div>
+			</li>
+			</a>
+			<!--2------------------------------>
+			<a href="../menu/beverages">
+			<li class="item-b">
+				<div class="box box-img02">
+					<div class="slide-details">
+						<p>Beverages</p>
+					</div>
+					<div class="user user-img02"></div>
+				</div>
+			</li>
+			</a>
+			<!--3------------------------------>
+			<a href="../menu/soup">
+			<li class="item-c">
+				<div class="box box-img03">
+					<div class="slide-details">
+						<p>Soups</p>
+					</div>
+					<div class="user user-img03"></div>
+				</div>
+			</li>
+			</a>
+			<!--4------------------------------>
+			<a href="../menu/chapatis">
+			<li class="item-d">
+				<div class="box box-img04">
+					<div class="slide-details">
+						<p>Chapatis</p>
+					</div>
+					<div class="user user-img04"></div>
+				</div>
+			</li>
+			</a>
+			<!--5------------------------------>
+			<a href="../menu">
+			<li class="item-e">
+				<div class="box box-img05">
+					<div class="slide-details">
+						<p>Main Course</p>
+					</div>
+					<div class="user user-img05"></div>
+				</div>
+			</li>
+		</a>
+			<!--6------------------------------>
+			<a href="../menu/dessert">
+			<li class="item-f">
+				<div class="box box-img06">
+					<div class="slide-details">
+						<p>Desserts</p>
+					</div>
+					<div class="user user-img06"></div>
+				</div>
+			</li>
+		</a>
+		</ul>
+		<!------------graphic-------------------->
+
+	</section>
+	<!--plans-->
+
+
+	<!--sevices-heading-->
+	<section class="services">
+		<div class="s-heading">
+			<p>Our Features</p>
+		</div>
+
+		<div class="services-container">
+			<!--1-box---------------------->
+			<div class="s-box">
+				<div class="s-icon front-icon"></div>
+				<a href="#">User Friendly</a>
+				<p>We shall provide the best user expirience with all the food items under a easy to use website </p>
+			</div>
+			<!--2----------------------->
+			<div class="s-box">
+				<div class="s-icon back-icon"></div>
+				<a href="#">Recomeendations</a>
+				<p>We shall provide you with best recommendations based on reviews and your previous orders </p>
+			</div>
+			<!--3----------------------->
+			<div class="s-box">
+				<div class="s-icon seo-icon"></div>
+				<a href="#">Security</a>
+				<p>The provided payment gateways are secured and none of your credentials are visible to anyone.</p>
+			</div>
+
+
+		</div>
+	</section>
+	<!--conatct-box------------------->
+	<div class="contact">
+		<h1>For any issues or queries.</h1>
+		<button class="contact-btn">Contact Us</button>
+	</div>
+	</section>
+	<script src="{% static 'js/script.js'%}" ></script>
+</body>
+<script>
+	// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+</html>
