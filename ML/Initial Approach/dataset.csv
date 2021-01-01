@@ -1,0 +1,50 @@
+ID,ProductId,food_name,food_category,sub_category,flavour,price,UserId,ProfileName,HelpfulnessNumerator,HelpfulnessDenominator,Score
+1,B001,tea,beverage,hot,sweet,20,A3SGXH7AUHU8GW,,0,0,1
+2,B002,coffee,beverage,hot,sweet,30,A1D87F6ZCVE5NK,,1,1,3
+3,B003,coke,beverage,cold,tangy,40,ABXLMWJIXXAIN,,0,0,3
+4,B004,fanta,beverage,cold,tangy,40,A395BORC6FGVXV,,3,4,5
+5,B005,faluda,beverage,cold,sweet,100,A1UQRSCLF8GW1T,,0,0,3
+6,B006,badam milk,beverage,cold,sweet,150,ADT0SRK1MGOEU,,1,2,1
+7,B007,cold coffee,beverage,cold,sweet,200,A1SP2KVKFXXRU1,,1,1,1
+8,B008,mango milkshake,beverage,cold,sweet,150,A3JRGQVEQN31IQ,,3,3,3
+9,B009,jal jeera,beverage,cold,tangy,60,A1MZYO9TZK0BBI,,0,0,2
+10,BR001,hara bhara kebab,breakfast,hot,exotic,250,A1WO0KGLPR5PV6,mom2emma,0,0,5
+11,BR002,crispy veg,breakfast,hot,spicy,300,A22P2J09NJ9HKE,"S. Cabanaugh ""jilly pepper""",0,0,5
+12,BR003,paneer chilli,breakfast,hot,spicy,300,A31OQO709M20Y7,"Molly V. Smith ""staral""",0,1,5
+13,BR004,idli ,breakfast,hot,exotic,60,A327PCT23YH90,,1,1,2
+14,BR005,dosa,breakfast,hot,exotic,80,A18ECVX2RJ7HUE,,0,0,5
+15,BR006,medu vada,breakfast,hot,spicy,60,A2MUGFV2TDQ47K,,2,2,3
+16,BR007,grill sandwch,breakfast,hot,spicy,150,A1CZX3CP8IKQIJ,,2,1,4
+17,BR008,toast sandwich,breakfast,hot,exotic,100,A3KLWF6WQ5BNYO,,1,1,3
+18,C001,roti,chapati,hot,exotic,10,A1SYSKR79LA2CB,"Mycroft ""Virture is its own punishment""",4,5,5
+19,C002,lachha paratha,chapati,hot,exotic,25,A3D1TXE98KRKYO,"Danny ""The Student""",2,3,4
+20,C003,naan,chapati,hot,exotic,30,AVCA516CFZ9HF,S. Fowler,0,0,4
+21,C004,kulcha,chapati,hot,exotic,35,A1P21J0DMTVGS7,Lovethemovies,0,0,5
+22,D001,rocky road,dessert,cold,sweet,100,ATBE88PKKQTRA,Matthew R Lehmkuhler,0,0,5
+23,D002,vanilla ice cream ,dessert,cold,sweet,40,AJFIH0DZYJF7T,Lisa Barton,0,0,3
+24,D003,brownie,dessert,cold,sweet,150,ABTKZKAWOK4DC,huntersgun,3,3,5
+25,D004,gulab janum,dessert,cold,sweet,25,AC567LXSKDNC1,Teeebooo,0,0,5
+26,D005,strawberry ice cream,dessert,cold,sweet,40,A327PCT23YH90,,4,4,4
+27,D006,chocobite ice cream,dessert,cold,sweet,40,A18ECVX2RJ7HUE,,2,2,5
+28,D007,black currant ice cream,dessert,cold,sweet,40,A2MUGFV2TDQ47K,,1,1,2
+29,D008,pineapple cake,dessert,cold,sweet,450,A1CZX3CP8IKQIJ,,0,0,4
+30,D009,rasgulla,dessert,cold,sweet,25,A3KLWF6WQ5BNYO,,0,0,3
+31,MC001,pizza,main course,hot,exotic,400,A2XIHNXODNZGV4,"ChemProf ""chem professor""",1,1,5
+32,MC002,veg lazeez,main course,hot,tangy,250,A3BDOAPSF96WGQ,2tall,1,1,5
+33,MC003,veg makhani,main course,hot,exotic,250,A27TZ4WBU7N0YF,I. So,0,0,1
+34,MC004,paneer amritsari,main course,hot,sweet,250,AB30HQTI5VOLR,Melinda Bishop,1,1,5
+35,MC005,babycorn mushroon masala,main course,hot,exotic,300,A25BGFRHYHEZKK,Toby's mom,4,4,5
+36,MC006,veg kolhapuri,main course,hot,spicy,250,A3IV7CL2C13K2U,,1,1,2
+37,MC007,pasta,main course,hot,exotic,250,A38BUM0OXH38VK,singlewinder,0,0,5
+38,MC008,jeera rice with dal fry,main course,hot,spicy,100,A1EC57S6C2VLTL,"Lorraine ""Agelechio""",0,0,5
+39,MC009,biryani,main course,hot,spicy,160,ABG53EBZBKD23,"J. Romagnoli ""*jroma""",0,0,5
+40,MC010,pav bhaji ,main course,hot,spicy,150,A38BUM0OXH38VK,,1,1,2
+41,MC011,veg pulav,main course,hot,exotic,170,A3HDKO7OW0QNK4,,1,1,4
+42,S001,lemon coriander soup,soup,hot,tangy,135,A1D87F6ZCVE5NK,dll pa,0,0,1
+43,S002,green pepper soup,soup,hot,spicy,135,ABXLMWJIXXAIN,"Natalia Corres ""Natalia Corres""",1,1,4
+44,S003,hot and sour soup,soup,hot,sour,135,ADT0SRK1MGOEU,Twoapennything,0,0,4
+45,S004,broccoli corn soup,soup,hot,exotic,135,A1MZYO9TZK0BBI,R. James,1,1,5
+46,S005,manchow soup,soup,hot,spicy,145,A21BT40VZCCYT4,Carol A. Reed,0,0,5
+47,S006,french onion soup,soup,hot,exotic,145,A3HDKO7OW0QNK4,Canadian Fan,1,1,5
+48,S007,mexican soup,soup,hot,exotic,150,A2725IB4YY9JEB,"A Poeng ""SparkyGoHome""",4,4,5
+49,S008,tomato soup,soup,hot,tangy,130,A327PCT23YH90,LT,1,1,1
